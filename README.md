@@ -1,7 +1,9 @@
 # itsa
 Carries out ITSA analysis on negative binomial distributed univariate time series.  Provide the time series and the known intervention interval and recieve glm analysis output.  If no csv is provided the script operates in test mode and generates synthetic test data.
 
-Requires csv series with column headers: ['Date','Data']
+Requires:
+pandas, numpy, statsmodels
+csv series with column headers: ['Date','Data']
 
     Usage:
         python script.py [csv_file_path] [start_date] [end_date] [--help]
